@@ -1,6 +1,6 @@
 Package.describe({
   name: 'oddup:accounts-facebook-ddp',
-  version: '0.0.1',
+  version: '0.0.2',
   // Brief, one-line summary of the package.
   summary: "Login service for Facebook accounts",
   // URL to the Git repository containing the source code for this package.
@@ -16,7 +16,7 @@ Package.onUse(function(api) {
   // Export Accounts (etc) to packages using this one.
   api.imply('accounts-base', ['client', 'server']);
   api.use('accounts-oauth', ['client', 'server']);
-  api.use('oddup:facebook-ddp@0.0.1', ['client', 'server']);
+  api.use('oddup:facebook-ddp@0.0.3', ['client', 'server']);
 
   api.addFiles('facebook_login_button.css', 'client');
 
